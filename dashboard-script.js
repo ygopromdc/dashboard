@@ -13,8 +13,8 @@ $(function(){
     $("#deathcancel_button").click(cancel_death);
     $("#reboot_button").click(reboot);
     var params=parseQueryString();
-    $("#ip").val(params["ip"]);
-    $("#port").val(params["port"]);
+    $("#ip").val("legyonx.ubisuite.com");
+    $("#port").val(7922);
     $("#password").val(params["password"]);
 	$("#username").val(params["username"]);
 });
@@ -61,7 +61,7 @@ function autoload() {
             return;
         }*/
         $("#message_callback").text("ON");
-        window.autoLoad=window.setInterval(loadrooms,1000);
+        window.autoLoad=window.setInterval(loadrooms,10000);
     }
 }
 
